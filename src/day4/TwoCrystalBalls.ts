@@ -10,7 +10,7 @@ export default function two_crystal_balls(breaks: boolean[]): number {
 
   i -= jmpAmount
 
-  for (; i < breaks.length; ++i) {
+  for (; i < i + jmpAmount; i++) {
     if (breaks[i]) {
       return i
     }
